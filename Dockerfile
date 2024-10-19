@@ -13,7 +13,7 @@ RUN npm install --legacy-peer-deps
 # Copy the rest of the application files into the container
 COPY . .
 
-WORKDIR /app/dipu
+# WORKDIR /app/dipu
 
 EXPOSE 3000
 # Expose the port the app runs on (if needed, e.g., if it's a web app)
