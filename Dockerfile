@@ -15,7 +15,7 @@ COPY . .
 
 WORKDIR /app/dipu
 
-
+EXPOSE 3000
 # Expose the port the app runs on (if needed, e.g., if it's a web app)
 # EXPOSE 3000  # Adjust the port based on your application
 
