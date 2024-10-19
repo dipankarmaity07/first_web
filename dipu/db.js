@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 
 
 module.exports = {
-  connect:()=> mongoose.connect("mongodb+srv://dipankarmtmh:Dip9547%40@cluster0.xvr5e.mongodb.net/sem_7?retryWrites=true&w=majority&appName=Cluster0/sem_7")
+  connect:()=> mongoose.connect("mongodb+srv://dipankarmtmh:Dip9547%40@cluster0.xvr5e.mongodb.net/sem_7?retryWrites=true&w=majority&appName=Cluster0")
   .then(()=>console.log("mongoose connected")).catch((e)=>console.log("failed"))
 };
 
