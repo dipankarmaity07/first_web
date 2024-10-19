@@ -125,7 +125,7 @@ module.exports = {
       });
 
 
-      return jwt.sign({ id: user.id }, process.env.JWT_SECRET);
+      return jwt.sign({ id: user.id }, 'K$9vL8@i0zY1!mPqF2w');
     } catch (err) {
 
       throw new Error('Error creating account');
@@ -154,6 +154,6 @@ module.exports = {
       throw new AuthenticationError('Error signing in');
     }
 
-    return jwt.sign({ id: user.id }, process.env.JWT_SECRET);
+    return jwt.sign({ id: user.id }, 'K$9vL8@i0zY1!mPqF2w');
   }
 };
