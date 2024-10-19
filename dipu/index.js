@@ -9,7 +9,7 @@ const typeDefs = require('./schema');
 const resolvers = require('./resolvers');
 
 
-const port =4000;
+const port =process.env.PORT || 3000;
 
 
 
