@@ -11,7 +11,7 @@ const resolvers = require('./resolvers');
 
 const port =process.env.PORT || 4000;
 
-
+const baseUrl = process.env.BACK4APP_URL || `http://localhost:${port}`;
 
 
 db.connect();
@@ -54,9 +54,10 @@ async function startServer() {
   server.applyMiddleware({ app, path: '/api' });
 
   app.listen({ port },'0.0.0.0', () =>
-    console.log(
-      `GraphQL Server running at http://0.0.0.0:${port}${server.graphqlPath}`
-    )
+    // console.log(
+    //   `GraphQL Server running at http://0.0.0.0:${port}${server.graphqlPath}`
+    // )
+    console.log(`GraphQL Server running at ${baseUrl}/api`)
   );
 }
 
