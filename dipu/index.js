@@ -51,13 +51,13 @@ async function startServer() {
  
   await server.start();
 
-  server.applyMiddleware({ app, path: '/api' });
+  server.applyMiddleware({ app, path: '/dipankar' });
 
   app.listen({ port },'0.0.0.0', () =>
     // console.log(
     //   `GraphQL Server running at http://0.0.0.0:${port}${server.graphqlPath}`
     // )
-    console.log(`GraphQL Server running at ${baseUrl}/api`)
+    console.log(`GraphQL Server running at ${baseUrl}${server.graphqlPath}`)
   );
 }
 
