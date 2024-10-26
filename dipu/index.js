@@ -21,7 +21,7 @@ db.connect();
   if (token) {
     try {
 
-      return jwt.verify(token, 'K$9vL8@i0zY1!mPqF2w');
+      return jwt.verify(token, 'K$9vL8@i0zY1!mPqF2w')
     } catch (err) {
       console.log("wrong token")
       throw new AuthenticationError('Session invalid');
