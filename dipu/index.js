@@ -27,6 +27,7 @@ db.connect();
       throw new AuthenticationError('Session invalid');
     }
   }
+  return null;
 
 };
 
