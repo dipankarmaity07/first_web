@@ -1,5 +1,8 @@
 module.exports = {
   notes: async (parent, args, { models ,user}) => {
+    if (!user) {
+      throw new AuthenticationError('You must be logged in to view notes');
+    }
     if(args.id!=user.id){
       throw new Error("dont get permission to access data authentication")
     }
